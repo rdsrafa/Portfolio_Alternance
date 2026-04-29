@@ -2,6 +2,25 @@
    RAFAEL RODRIGUES — PORTFOLIO SCRIPT
    ═══════════════════════════════════════════════ */
 
+/* ── HAMBURGER MENU ───────────────────────────── */
+const hamburger   = document.getElementById('nav-hamburger');
+const mobileMenu  = document.getElementById('nav-mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+
+/* Close on link click */
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
 /* ── CUSTOM CURSOR ────────────────────────────── */
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');

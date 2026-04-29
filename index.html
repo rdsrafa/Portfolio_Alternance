@@ -18,7 +18,7 @@
 
   <!-- ── NAVIGATION ── -->
   <nav id="navbar">
-<img src="photo.jpg" alt="Rafael RODRIGUES" class="nav-logo-img">    <ul class="nav-links">
+<img src="maphoto.jpg" alt="Rafael RODRIGUES" class="nav-logo-img">    <ul class="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#experience">Expérience</a></li>
       <li><a href="#projects">Projets</a></li>
@@ -27,12 +27,29 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="mailto:rafi.rodrigues10@gmail.com" class="nav-cta">Me contacter →</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <ul class="nav-mobile-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:rafi.rodrigues10@gmail.com" class="btn-primary" style="margin-top:2rem;width:100%;justify-content:center;">✉ Me contacter</a>
+  </div>
 
   <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-grid"></div>
     <div class="hero-glow"></div>
+    <div class="hero-inner">
     <div class="hero-content">
       <p class="hero-label">Major de promotion · Paris Nanterre · Alternance MIAGE 2026</p>
       <h1 class="hero-title">Rafael<br><span class="accent">RODRIGUES</span></h1>
@@ -65,7 +82,15 @@
           <div class="label">Langues parlées</div>
         </div>
       </div>
-    </div>
+    </div><!-- /.hero-content -->
+
+      <!-- Photo hero droite -->
+      <div class="hero-photo-wrap">
+        <img src="maphoto.jpg" alt="Rafael Rodrigues" class="hero-photo">
+        <p class="hero-photo-label">Rafael RODRIGUES · <span>Alternance MIAGE 2026</span></p>
+      </div>
+
+    </div><!-- /.hero-inner -->
   </section>
 
   <!-- ── ABOUT ── -->
@@ -229,8 +254,9 @@
         </div>
         <div class="project-footer">
           <div class="project-links">
-            <a href="" class="project-link">GitHub →</a>
-            <a href="#" class="project-link">Demo →</a>
+            <a href="https://github.com/rdsrafa/Projet_L2.git" class="project-link">GitHub →</a>
+            <a href="rapport_projet_L2.pdf" class="project-link" download>Rapport de Projet →</a>
+
           </div>
         </div>
       </div>
@@ -570,6 +596,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
