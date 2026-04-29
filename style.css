@@ -184,7 +184,7 @@ nav {
   opacity: 0;
   animation: fadeUp .7s .2s forwards;
 }
-.hero-label::before { content: '// '; color: var(--muted); }
+.hero-label::before {color: var(--muted); }
 
 h1.hero-title {
   font-size: clamp(3rem, 7vw, 5.5rem);
@@ -296,7 +296,7 @@ section { padding: 100px 6vw; }
   text-transform: uppercase;
   margin-bottom: .75rem;
 }
-.section-label::before { content: '## '; color: var(--muted); }
+.section-label::before {color: var(--muted); }
 
 h2.section-title {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
@@ -340,7 +340,6 @@ h2.section-title {
   overflow: hidden;
 }
 .about-card::before {
-  content: '';
   position: absolute; top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -593,7 +592,6 @@ h2.section-title {
 /* ── TIMELINE ───────────────────────────────── */
 .timeline { max-width: 700px; position: relative; }
 .timeline::before {
-  content: '';
   position: absolute;
   left: 20px; top: 8px; bottom: 0;
   width: 1px;
